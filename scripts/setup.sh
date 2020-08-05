@@ -1,6 +1,8 @@
 #!/bin/bash
 
-function show_br_commit(){
+set -x
+
+show_br_commit () {
   local path="$1"; shift
   local branch
   local commit
